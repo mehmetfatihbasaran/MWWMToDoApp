@@ -1,0 +1,17 @@
+buildscript {
+    ext {
+        compose_ui_version = '1.5.4'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.1'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.20'
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.50'
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
